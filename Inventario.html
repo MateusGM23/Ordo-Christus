@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ordo Christus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inventario.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="bg-dark text-white">
+    <h1 class="text-center mb-4 mt-3">Inventario</h1>
+    <div class="container">
+        <button class="btn btn-primary" onclick="apareceBB()">Adicionar</button>
+        <script>
+            function apareceBB() {
+                var seletor = document.getElementById("equipamento")
+                var salvadorDali = document.getElementById("dali")
+                seletor.classList.remove("d-none")
+                salvadorDali.classList.remove("d-none")
+            }
+        </script>
+        <select id="equipamento" class="input border-bottom me-2 semBorda bg-dark text-white fw-bold d-none"
+            id="inputGroupSelect01">
+            <option selected>Escolha</option>
+            <option value="faca">Faca</option>
+            <option value="martelo">Martelo</option>
+            <option value="punhal">Punhal</option>
+            <option value="bastao">Bastão</option>
+            <option value="machete">Machete</option>
+            <option value="lanca">Lança</option>
+            <option value="cajado">Cajado</option>
+            <option value="arco">Arco</option>
+            <option value="besta">Besta</option>
+            <option value="pistola">Pistola</option>
+            <option value="revolver">Revolver</option>
+            <option value="fuzilDCaca">Fuzil de Caça</option>
+            <option value="machadinha">Machadinha</option>
+            <option value="nunchaku">Nunchaku</option>
+            <option value="corrente">Corrente</option>
+            <option value="espada">Espada</option>
+            <option value="florete">Florete</option>
+            <option value="machado">Machado</option>
+            <option value="maca">Maça</option>
+            <option value="acha">Acha</option>
+            <option value="gadanho">Gadanho</option>
+            <option value="katana">Katana</option>
+            <option value="marreta">Marreta</option>
+            <option value="montante">Montante</option>
+            <option value="motoserra">Motoserra</option>
+            <option value="arcoComposto">Arco Composto</option>
+            <option value="balestra">Balestra</option>
+            <option value="submetralhadora">Submetralhadora</option>
+            <option value="espingarda">Espingarda</option>
+            <option value="fuzilDAssalto">Fuzil de assalto</option>
+            <option value="fuzilDPrecisao">Fuzil de precisão</option>
+            <option value="bazuca">Bazuca</option>
+            <option value="lancaChamas">Lança Chamas</option>
+            <option value="metralhadora">Metralhadora</option>
+            <option value="balasCurtas">Balas Curtas</option>
+            <option value="balasLongas">Balas Longas</option>
+            <option value="cartuchos">Cartuchos</option>
+            <option value="combustivel">Combustivel</option>
+            <option value="fechas">Flechas</option>
+            <option value="foguete">Foguete</option>
+            <option value="granadaDAtordoamento">Granada de Atordoamento</option>
+            <option value="granadaDFragmentacao">Granada de Fragmentação</option>
+            <option value="granadaDAfumaca">Granada de Fumaça</option>
+            <option value="granadaDAicendiaria">Granada Incendiaria</option>
+            <option value="mina">Mina antipessoal</option>
+            <option value="algemas">Algemas</option>
+            <option value="arpeu">Arpeu</option>
+            <option value="bandoleira">Bandoleira</option>
+            <option value="binoculos">Binoculos</option>
+            <option value="bloqueadorDSinal">Bloqueador de sinal</option>
+            <option value="cicatrizante">Cicatrizante</option>
+            <option value="corda">Corda</option>
+            <option value="equipDSobrevivencia">Equip de Sobrevivencia</option>
+            <option value="lanternaTatica">Lanterna tatica</option>
+            <option value="mascaraDGas">Mascara de Gas</option>
+            <option value="mochila">Mochila Militar</option>
+            <option value="oculosVisaoNoturna">Oculos de Visão Noturna</option>
+            <option value="peDCabra">Pe de Cabra</option>
+            <option value="pistolaDDardos">Pistola de dardos</option>
+            <option value="pistolaSinalizadora">Pistola sinalizadora</option>
+            <option value="soqueira">Soqueira</option>
+            <option value="sprayDpimenta">Spray de pimenta</option>
+            <option value="taser">Taser</option>
+            <option value="trajeHazmat">Traje Hazmat</option>
+            <option value="pulsoParalizante">Pulso Paralizante</option>
+            <option value="detectorDEnergias">Detector de Energias</option>
+            <option value="componentesEnergeticos">Componentes Energeticos</option>
+            <option value="emissorDpulsos">Emissor de Pulsos</option>
+            <option value="escutaDRuidos">Escuta de Ruidos</option>
+        </select>
+        <button id="dali" class="btn btn-success d-none" onclick="addItemTabela()">Salvar</button>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Equipamento</th>
+                    <th scope="col">Prestigio</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">usado</th>
+                </tr>
+            </thead>
+            <tbody id="corpaoTabela">
+            
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="inventario.js"></script>
+</body>
+
+</html>
